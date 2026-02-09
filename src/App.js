@@ -46,8 +46,9 @@ function App() {
         <RethuComp />
         <ClassComp /> */}
         {/* <CompLifeCycle newColor="Green" /> */}
-        <button onClick={()}></button>
-<input type="text" name="username" placeholder="enter user name" />
+<button onClick={()=>setData("upadated Data")}>Update data</button>
+     <h1>{data}</h1>
+ <input type="text" name="username" placeholder="enter user name" />
         <img  title='AI generated image'src='C:\Vs_coding\Work_File\src\shared\images\cow.jpg'></img>
       </div> 
     </div>
