@@ -1,0 +1,34 @@
+{
+  "product": [
+    {
+      "id": "8d33",
+      "pname": "Rgb Mouse",
+      "pprice": "17800",
+      "pcompany": "dell"
+    },
+    {
+      "id": "3ebd",
+      "pname": "Rgb Mouse",
+      "pprice": "1700",
+      "pcompany": "dell"
+    },
+    {
+      "id": "4096",
+      "pname": "Rgb ",
+      "pprice": "17",
+      "pcompany": "dell"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "uid": "admin@gmail.com",
+      "upassword": "admin@123"
+    },
+    {
+      "id": "2",
+      "uid": "king@gmail.com",
+      "upassword": "king@123"
+    }
+  ]
+}
