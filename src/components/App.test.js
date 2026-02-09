@@ -73,10 +73,11 @@ describe("UI test case group", () => {
 
         describe("Nested UI test case group", () => { 
             test("nested test case", () => {
-            render(<App />);
-            const checkInput = screen.getByRole("textbox");
-            expect(checkInput).toHaveAttribute("name", "username");
-        });
+                render(<App />);
+                let checkInput = screen.getByRole("textbox");
+                
+                expect(checkInput).toHaveAttribute("name", "Username"); 
+            });
         });
     });
 }); 
