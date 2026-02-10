@@ -1,0 +1,28 @@
+{
+  "product": [
+    {
+      "id": "4a67",
+      "pname": "Keyboard",
+      "pprice": "1900",
+      "pcompany": "Asus"
+    },
+    {
+      "id": "c7f8",
+      "pname": "Pendrive (64)",
+      "pprice": "600",
+      "pcompany": "Sandisk"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "uid": "admin@gmail.com",
+      "upassword": "admin@123"
+    },
+    {
+      "id": "2",
+      "uid": "king@gmail.com",
+      "upassword": "king@123"
+    }
+  ]
+}
