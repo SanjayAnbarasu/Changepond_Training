@@ -1,6 +1,6 @@
 import React from 'react'
 import { Outlet } from 'react-router-dom'
-import RahulComp from '../components/RahulComp'
+import FunctionComp from '../components/FunctionComp'
 import NavComp from './NavComp'
 
 const DashboardComp = () => {

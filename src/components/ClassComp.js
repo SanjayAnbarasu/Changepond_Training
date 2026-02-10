@@ -16,7 +16,7 @@ class FunctionComp extends Component {
         return (
             <div className="main-content">
                 <div className="view-card">
-                    <h6>Function Component:</h6>
+                    <h6>Class Component:</h6>
                     <p>First Name: <strong>{this.state.fname}</strong></p>
                     <p>Last Name: <strong>{this.state.lname}</strong></p>
                     <p>Email: <strong>{this.state.email}</strong></p>

@@ -12,9 +12,9 @@ import ProductDetailsComp from "../components/day4/Crud_ope/ProductDetailsComp";
 import AddproductComp from "../components/day4/Crud_ope/AddproductComp";
 import UpdateProductComp from "../components/day4/Crud_ope/UpdateProductComp";
 import DataListComp from "../Layout/DataListComp";
-import RahulComp from "../components/RahulComp";
-import ToggleImage from "../components/task/ToggleImage";
 import FunctionComp from "../components/FunctionComp";
+import ClassComp from "../components/ClassComp";
+import ToggleImage from "../components/task/ToggleImage";
 const router = createBrowserRouter([
 
     {path:"dashboard",element:<DashboardComp />, children:[
@@ -24,8 +24,8 @@ const router = createBrowserRouter([
     {path:"virtualdom", element:<VirtualDOMComp />},
 
     {path:"ToggleImage", element:<ToggleImage/>},
-    {path:"RahulComp", element:<RahulComp/>},
     {path:"FunctionComp", element:<FunctionComp/>},
+    {path:"ClassComp", element:<ClassComp/>},
     {path:"slider", element:<SliderComp />},
 
 

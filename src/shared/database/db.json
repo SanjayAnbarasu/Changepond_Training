@@ -1,12 +1,6 @@
 {
   "product": [
     {
-      "id": "4096",
-      "pname": "Rgb Keyboard",
-      "pprice": "1700",
-      "pcompany": "dell"
-    },
-    {
       "id": "4a67",
       "pname": "Keyboard",
       "pprice": "1900",

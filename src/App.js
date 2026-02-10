@@ -1,10 +1,9 @@
 import React from 'react';
 import './App.css';
-import RahulComp from './components/RahulComp';
 import FunctionComp from './components/FunctionComp';
+import ClassComp from './components/ClassComp';
 
 /**
-import ClassComp from './components/ClassComp';
 import MyImagesComp from './components/MyImagesComp';
 import ToggleComp from './components/task/ToggleComp';
 import MultiToggleComp from './components/task/MultiToggleComp';
@@ -22,7 +21,7 @@ function App() {
       
       <header className="header-bar">
         <div className="profile-container">
-          <RahulComp 
+          <FunctionComp 
             fname="sanjay" 
             lname="A" 
             email="sanjayanbarasu2004@gmail.com" 
@@ -34,7 +33,7 @@ function App() {
 
       <main className="header-bar">
         <div className="view-card">
-          <FunctionComp />
+          <ClassComp />
         </div>
 
 

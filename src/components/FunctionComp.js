@@ -5,7 +5,7 @@ class RahulComp extends Component {
     return (
       <div className="main-content">
         <div className="view-card">
-          <h6>This is class component</h6>
+          <h6>This is Function Comp component</h6>
           <p>First name : <strong>{this.props.fname}</strong></p>
           <p>Last name  : <strong>{this.props.lname}</strong></p>
           <p>Email : <strong>{this.props.email}</strong></p>
