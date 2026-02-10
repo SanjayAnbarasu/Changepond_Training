@@ -1,22 +1,22 @@
 {
   "product": [
     {
-      "id": "8d33",
-      "pname": "Rgb Mouse",
-      "pprice": "17800",
-      "pcompany": "dell"
-    },
-    {
-      "id": "3ebd",
-      "pname": "Rgb Mouse",
+      "id": "4096",
+      "pname": "Rgb Keyboard",
       "pprice": "1700",
       "pcompany": "dell"
     },
     {
-      "id": "4096",
-      "pname": "Rgb ",
-      "pprice": "17",
-      "pcompany": "dell"
+      "id": "4a67",
+      "pname": "Keyboard",
+      "pprice": "1900",
+      "pcompany": "Asus"
+    },
+    {
+      "id": "c7f8",
+      "pname": "Pendrive (64)",
+      "pprice": "600",
+      "pcompany": "Sandisk"
     }
   ],
   "users": [

@@ -26,7 +26,7 @@ const MultiToggleComp = () => {
           <br /> <br />
   
           {show && (
-            <img src={show} width="500px" height="250px" />
+            <img src={show} width="500px" height="500px" />
           )}
     </div>
     )

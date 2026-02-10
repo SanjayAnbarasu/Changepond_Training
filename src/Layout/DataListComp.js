@@ -2,6 +2,11 @@ import React from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { fetchData } from '../components/day4/redux/apiSlice'
 import { useState, useEffect } from 'react'
+import DeleteIcon from '@mui/icons-material/Delete';
+import EditIcon from '@mui/icons-material/Edit';
+import { Link } from 'react-router-dom';
+import axios from 'axios'
+
 
 
 const DataListComp = () => {
@@ -17,7 +22,14 @@ const DataListComp = () => {
         dispatch(fetchData());
     },[])
         
-
+  const deleteproduct = (id) => {
+    if(window.confirm(`Are you sure to delete product with id: ${id}`)){
+    axios.delete(`http://localhost:5555/product/${id}`).then(()=>{
+        window.alert("Product deleted successfully");
+        fetchData();
+      }).catch((error)=>{})
+    }
+  }
   return (
     <div>
         <h2> This is a Data list</h2>
@@ -39,12 +51,12 @@ const DataListComp = () => {
                   <td>{value.pprice}</td>
                   <td>{value.pcompany}</td>
                   <td>
-                    {/* <Link to={`/dashboard/updateproduct/${value.id}`} className='btn btn-outline-success btn-sm'>Edit
+                    <Link to={`/dashboard/updateproduct/${value.id}`} className='btn btn-outline-success btn-sm'>Edit
                     <EditIcon></EditIcon>
                     </Link>
                     <button type ='button' onClick={()=>deleteproduct(value.id)} className='btn btn-outline-danger btn-sm'>Delete
                     <DeleteIcon ></DeleteIcon>
-                    </button> */}
+                    </button>
                   </td>
                 </tr>
               })

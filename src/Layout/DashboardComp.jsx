@@ -1,6 +1,6 @@
 import React from 'react'
 import { Outlet } from 'react-router-dom'
-
+import RahulComp from '../components/RahulComp'
 import NavComp from './NavComp'
 
 const DashboardComp = () => {
@@ -19,6 +19,7 @@ const DashboardComp = () => {
         <div className="card-footer border-primary">
           card footer
         </div>
+
       </div>
     </div>
   );

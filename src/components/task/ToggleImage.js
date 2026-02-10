@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import samosa from '/Vs_coding/Work_File/src/shared/images/samosa.png';
 import idly from '/Vs_coding/Work_File/src/shared/images/idly.png';
-// import dosa from '../shared/images/dosa.png';
 
 
 class ToggleImage extends Component {

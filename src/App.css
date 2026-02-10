@@ -1,0 +1,35 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.app-layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 10vh;
+  background-color: #f0f2f5; 
+}
+
+.header-bar {
+  background: white;
+  padding: 5px;
+  margin-bottom: 5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  justify-content: center;
+
+}
+
+.main-content {
+  padding: 0px;
+  display: flex;
+  justify-content: center;
+}
+
+.view-card {
+  background: white;
+  padding: 10px;
+  border-radius: 12px;
+  width: 100%;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}

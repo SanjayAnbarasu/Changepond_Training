@@ -1,63 +1,33 @@
 import React, { useState } from 'react';
 
 const FormValComp = () => {
-    const [firstName, setFirstName] = useState("");
-    const [lastName, setLastName] = useState("");
-    const [password, setPassword] = useState("");
+    const [user, setUser] = useState({ firstName: "", lastName: "", password: "" });
 
-    const handleSubmit = (event) => {
-        event.preventDefault(); 
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setUser({ ...user, [name]: value.trim() });
+    };
 
-        if (firstName === "") {
-            alert("Please enter First Name");
-        } else if (lastName === "") {
-            alert("Please enter Last Name");
-        } else if (password.length < 6) {
-            alert("Password must be at least 6 characters");
-        } else {
-            // This is where we show the data in the alert
-            alert(
-                `Data Submitted Successfully!\n` +
-                `First Name: ${firstName}\n` +
-                `Last Name: ${lastName}\n` +
-                `Password: ${password}`
-            );
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        
+        if (!user.firstName) return alert("Please enter First Name");
+        if (!user.lastName) return alert("Please enter Last Name");
+        if (user.password.length < 6) return alert("Password must be at least 6 characters");
 
-            console.log("Full User Data:", { firstName, lastName, password });
-            
-            setFirstName("");
-            setLastName("");
-            setPassword("");
-        }
+        alert(`Success!\nName: ${user.firstName} ${user.lastName}`);
+        console.log(user);
+        setUser({ firstName: "", lastName: "", password: "" });
     };
 
     return (
         <div style={{ margin: "20px", border: "2px solid blue", padding: "20px" }}>
             <h3>User Registration</h3>
             <form onSubmit={handleSubmit}>
-                
-                <label>First Name: </label>
-                <input 
-                    type="text" 
-                    value={firstName} 
-                    onChange={(e) => setFirstName(e.target.value)} 
-                /><br/><br/>
-
-                <label>Last Name: </label>
-                <input 
-                    type="text" 
-                    value={lastName} 
-                    onChange={(e) => setLastName(e.target.value)} 
-                /><br/><br/>
-
-                <label>Password: </label>
-                <input 
-                    type="password" 
-                    value={password} 
-                    onChange={(e) => setPassword(e.target.value)} 
-                /><br/><br/>
-
-                <button type="submit">submit</button>
+                <input name="firstName" placeholder="First Name" value={user.firstName} onChange={handleChange} /><br/><br/>
+                <input name="lastName" placeholder="Last Name" value={user.lastName} onChange={handleChange} /><br/><br/>
+                <input name="password" type="password" placeholder="Password" value={user.password} onChange={handleChange} /><br/><br/>
+                <button type="submit">Submit</button>
             </form>
         </div>
     );

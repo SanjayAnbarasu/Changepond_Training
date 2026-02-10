@@ -1,14 +1,19 @@
-
-
-.special{
-    border: 3px solid red;
-    width: 100px;
-    height: 100px;
+.special {
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
-    background-color: darkorchid;
-    transition: transform 2s;
-    margin: auto;
+    margin: 40px auto;
+    
+    background: linear-gradient(135deg, #6e8efb, #a777e3); 
+    border: 4px solid #ffffff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
+    
+    transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275), background 0.5s;
+    cursor: pointer;
 }
-.special:hover{
-    transform: rotateY(340deg);
+
+.special:hover {
+    transform: rotateY(180deg) scale(1.1); 
+    background: linear-gradient(135deg, #00d2ff, #3a7bd5); /* Changes color on hover */
+    box-shadow: 0 8px 25px rgba(0, 210, 255, 0.4);
 }

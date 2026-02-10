@@ -33,9 +33,9 @@ class MethodEventComp extends Component{
        
         <button type ="button" onClick={this.greet}>Greet</button>
         <br></br>
-        <button type ="buttom" onClick={() =>this.welcome("rethu","nirmal")}> welcome</button>
+        <button type ="buttom" onClick={() =>this.welcome("sanjay","nirmal")}> welcome</button>
         <br></br>
-        <h2 onMouseOver={()=> this.welcome("kishore","jaff")}> hover mouse over me</h2>
+        <h2 onMouseOver={()=> this.welcome("Syed","jaff")}> hover mouse over me</h2>
         <br></br>
         <h2> salary is {this.state.salary}</h2>
         <br></br>

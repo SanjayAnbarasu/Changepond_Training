@@ -14,7 +14,7 @@ import UpdateProductComp from "../components/day4/Crud_ope/UpdateProductComp";
 import DataListComp from "../Layout/DataListComp";
 import RahulComp from "../components/RahulComp";
 import ToggleImage from "../components/task/ToggleImage";
-import RethuComp from "../components/RethuComp";
+import FunctionComp from "../components/FunctionComp";
 const router = createBrowserRouter([
 
     {path:"dashboard",element:<DashboardComp />, children:[
@@ -25,7 +25,8 @@ const router = createBrowserRouter([
 
     {path:"ToggleImage", element:<ToggleImage/>},
     {path:"RahulComp", element:<RahulComp/>},
-    {path:"Rethucomp", element:<RethuComp/>},
+    {path:"FunctionComp", element:<FunctionComp/>},
+    {path:"slider", element:<SliderComp />},
 
 
 

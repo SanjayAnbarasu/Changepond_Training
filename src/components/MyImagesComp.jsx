@@ -1,16 +1,15 @@
 import React, { useState } from 'react';
 import samosa from '../shared/images/samosa.png';
-import kachori from '../shared/images/idly.jpg';
+import kachori from '../shared/images/kachori.jpg';
 import dosa from '../shared/images/dosa.png';
 
 
 const MyImagesComp = () => {
-    // Set the initial image
     const [currentImage, setCurrentImage] = useState(samosa);
 
     return (
         <div style={{ textAlign: 'center', padding: '20px' }}>
-            <h2>This is MY Images component</h2>
+            <h6>This is My Images component</h6>
             
             <div style={{ marginBottom: '20px' }}>
                 <img 
@@ -30,7 +29,7 @@ const MyImagesComp = () => {
                 </button>
 
                 <button type='button' onClick={() => setCurrentImage(kachori)}>
-                    idly
+                    Kachori
                 </button>
             </div>
         </div>

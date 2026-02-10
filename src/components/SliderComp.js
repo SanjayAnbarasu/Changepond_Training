@@ -7,7 +7,6 @@ const SliderComp = () => {
         <div>
             <Carousel>
       <Carousel.Item>
-        {/* <ExampleCarouselImage text="First slide" /> */}
         <img src={constData.dosa} alt='' style={{width:"100%",height:"400px"}} />
         <Carousel.Caption>
           <h3>First slide label</h3>
@@ -15,7 +14,6 @@ const SliderComp = () => {
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        {/* <ExampleCarouselImage text="Second slide" /> */}
          <img src={constData.jalebi} alt='' style={{width:"100%",height:"400px"}} />
         <Carousel.Caption>
           <h3>Second slide label</h3>
@@ -23,7 +21,6 @@ const SliderComp = () => {
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        {/* <ExampleCarouselImage text="Third slide" /> */}
          <img src={constData.samosa} alt='' style={{width:"100%",height:"400px"}} />
         <Carousel.Caption>
           <h3>Third slide label</h3>
