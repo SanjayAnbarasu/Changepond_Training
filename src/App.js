@@ -2,18 +2,11 @@ import React from 'react';
 import './App.css';
 import FunctionComp from './components/FunctionComp';
 import ClassComp from './components/ClassComp';
-<<<<<<< HEAD
 // import MultiToggleComp from './components/task/MultiToggleComp';
-=======
->>>>>>> 28adfcf0eefb598d1d0feb25212d8cfa152f5d3d
 
 /**
 import MyImagesComp from './components/MyImagesComp';
 import ToggleComp from './components/task/ToggleComp';
-<<<<<<< HEAD
-=======
-import MultiToggleComp from './components/task/MultiToggleComp';
->>>>>>> 28adfcf0eefb598d1d0feb25212d8cfa152f5d3d
 import ClickCountComp from './components/day3/clickCountComp';
 import HoverCountComp from './components/day3/HoverCountComp';
 import CompLifeCycle from './components/day3/CompLifeCycle';
@@ -43,19 +36,12 @@ function App() {
           <ClassComp />
         </div>
 
-<<<<<<< HEAD
         {/* <MultiToggleComp /> */}
-=======
->>>>>>> 28adfcf0eefb598d1d0feb25212d8cfa152f5d3d
 
         {/* 
         <div className="testing-area">
           <MyImagesComp />
           <ToggleComp />
-<<<<<<< HEAD
-=======
-          <MultiToggleComp />
->>>>>>> 28adfcf0eefb598d1d0feb25212d8cfa152f5d3d
           <ClickCountComp />
           <HoverCountComp /> 
           <ToggleImage />
