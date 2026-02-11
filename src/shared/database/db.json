@@ -29,6 +29,12 @@
       "firstName": "Sanjay",
       "lastName": "A",
       "password": "ewsfgtewrg"
+    },
+    {
+      "id": "eef3",
+      "firstName": "SyedUzair",
+      "lastName": "Q",
+      "password": "SYED@123"
     }
   ]
 }
