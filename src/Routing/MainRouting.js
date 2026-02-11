@@ -15,33 +15,30 @@ import DataListComp from "../Layout/DataListComp";
 import FunctionComp from "../components/FunctionComp";
 import ClassComp from "../components/ClassComp";
 import ToggleImage from "../components/task/ToggleImage";
+import ProtectedRouting from "./ProtectedRouting";
+import LoginComp from "../Layout/LoginComp";
 const router = createBrowserRouter([
 
-    {path:"dashboard",element:<DashboardComp />, children:[
+    {path:"",element:<LoginComp/>},
+    {path:"login",element:<LoginComp/>},
+
+
+    {path:"dashboard",element: <ProtectedRouting component={DashboardComp}/>,
+    children:[
     // naming router
-    {path:"myimages", element:<MyImagesComp />},
-
+    {path:"myimages", element:<MyImagesComp />},     
     {path:"virtualdom", element:<VirtualDOMComp />},
-
     {path:"ToggleImage", element:<ToggleImage/>},
     {path:"FunctionComp", element:<FunctionComp/>},
     {path:"ClassComp", element:<ClassComp/>},
     {path:"slider", element:<SliderComp />},
-
-
-
-    
     {path:"formval", element:<FormValComp />},
-
     {path:"productdetail", element:<ProductDetailsComp />},
     {path:"addproduct", element:<AddproductComp />},
     {path:"updateproduct/:id", element:<UpdateProductComp />},
-
     {path:"datalist", element:<DataListComp />},
-
     //5. wild card router
-        {path:"*", element:<PafeNotFoundComp />},
-        
+    {path:"*", element:<PafeNotFoundComp />},
     //4. Child routing
      {path:"hooks", element:<AllHooksComp />, children:[
      {path:"myimages", element:<MyImagesComp />},
@@ -49,22 +46,16 @@ const router = createBrowserRouter([
      {path:"useeffect", element:<UseEffectComp />},
      ]}
     ]},
-    
-        //2. default router
+    //2. default router
     //{path:"", element:<SliderComp />},
-
     // naming router
     //{path:"myimages", element:<MyImagesComp />},
     //path:"mycss", element:<mycss />}
-
     // //3. paramerter router
     // {path:"condren/:id", element:<conditionRenCom />}
     // //5. wild card router
     // {path:"*", element:<PageNotFoundComp />} 
-
     // 
-
-
 ]);
 
 export default router;

@@ -7,7 +7,7 @@ const SliderComp = () => {
         <div>
             <Carousel>
       <Carousel.Item>
-        <img src={constData.dosa} alt='' style={{width:"100%",height:"400px"}} />
+        <img src={constData.Burger} alt='' style={{width:"100%",height:"400px"}} />
         <Carousel.Caption>
           <h3>First slide label</h3>
           <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>

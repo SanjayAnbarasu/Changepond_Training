@@ -2,6 +2,8 @@ import React from 'react';
 import './App.css';
 import FunctionComp from './components/FunctionComp';
 import ClassComp from './components/ClassComp';
+import SliderComp from './components/SliderComp';
+import LoginComp from './Layout/LoginComp';
 // import MultiToggleComp from './components/task/MultiToggleComp';
 
 /**
@@ -35,7 +37,8 @@ function App() {
         <div className="view-card">
           <ClassComp />
         </div>
-
+        <SliderComp></SliderComp>
+        <LoginComp></LoginComp>
         {/* <MultiToggleComp /> */}
 
         {/* 
