@@ -1,0 +1,7 @@
+python is an interpreted language 
+-object oriented 
+-high level 
+-dynamic
+-semantic
+-extensible
+-support difffrent padingrams
